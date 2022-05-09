@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* a {
+  text-decoration: none;
+}
+
+:root {
+  --rectangle-1-color:#E3E3E4;
+  --rectangle-2-color:#49494B;
+  --search-bar-color:#F6F6F6;
+  --search-text-color:#F2F1F3;
+  --search-btn-text-color:#494848;
+  --discover-text-color:#444444;
+  --suggestion-title-pc:#333333;
+  --suggestions-pc-color:#8C8C8C;
+  --suggestion-title-phone:#A0A0A0;
+  --suggestions-phone-color:#CACACA;
+  --shadow-var: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rectangles-wrapper #logo-wrapper-phone {
+  display: none;
+}
+
+.rectangles-wrapper #rectangle-one {
+  position: relative;
+  background-color: var(--rectangle-1-color);
+  height: 70vh;
+  width: 100%;
+  background-size: 100% 200%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--rectangle-1-color)), color-stop(50%, #fff));
+  background-image: linear-gradient(to bottom, var(--rectangle-1-color) 50%, #fff 50%);
+  background-position: 0 100%;
+}
+
+.rectangles-wrapper #rectangle-one #btn-back {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 3em;
+  z-index: 999;
+}
+
+.rectangles-wrapper #rectangle-one #sneaker-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  top: 0px;
+  right: -990px;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.rectangles-wrapper #rectangle-one #sneaker-wrapper #sneaker-search-pc {
+  height: 24vw;
+}
+
+.rectangles-wrapper #rectangle-one #sneaker-wrapper #sneaker-search-phone {
+  display: none;
+}
+
+.rectangles-wrapper #rectangle-one #text-wrapper {
+  position: absolute;
+  top: -4vw;
+  left: 40px;
+}
+
+.rectangles-wrapper #rectangle-one #text-wrapper #search-text {
+  font-size: 15vw;
+  font-weight: 600;
+  opacity: 0;
+  color: var(--search-text-color);
+  -webkit-transition: all .65s ease-in-out;
+  transition: all .65s ease-in-out;
+}
+
+.rectangles-wrapper #rectangle-one #search-form-wrapper {
+  position: absolute;
+  top: 10.6vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rectangles-wrapper #rectangle-one #search-form-wrapper #search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+
+.rectangles-wrapper #rectangle-one #search-form-wrapper #search-form #search-bar {
+  width: 50vw;
+  border: none;
+  outline: none;
+  background-color: var(--search-bar-color);
+  color: var(--search-btn-text-color);
+  border-radius: 50px;
+  height: 3.4vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: 600;
+  font-size: 1.5vw;
+  -webkit-box-shadow: var(--shadow-var);
+          box-shadow: var(--shadow-var);
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.rectangles-wrapper #rectangle-one #search-form-wrapper #search-form .btn-search {
+  width: 8vw;
+  height: 3.4vw;
+  background-color: white;
+  margin-left: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: var(--search-btn-text-color);
+  -webkit-box-shadow: var(--shadow-var);
+          box-shadow: var(--shadow-var);
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.rectangles-wrapper #rectangle-one #search-form-wrapper #search-form .btn-search:hover {
+  background-color: var(--rectangle-2-color);
+  color: var(--rectangle-1-color);
+}
+
+.rectangles-wrapper #rectangle-one #examples-wrapper {
+  position: absolute;
+  left: 17vw;
+  top: 21.4vw;
+}
+
+.rectangles-wrapper #rectangle-one #examples-wrapper #examples-title {
+  font-size: 1vw;
+  color: var(--suggestion-title-pc);
+  font-weight: 700;
+}
+
+.rectangles-wrapper #rectangle-one #examples-wrapper #examples {
+  font-size: .8vw;
+  font-weight: 700;
+  color: var(--suggestions-pc-color);
+}
+
+.rectangles-wrapper #rectangle-two {
+  background-color: var(--rectangle-2-color);
+  height: 30vh;
+  width: 100%;
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  background-size: 100% 200%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #333));
+  background-image: linear-gradient(to bottom, #fff 50%, #333 50%);
+  background-position: 100% 0;
+}
+
+.rectangles-wrapper #rectangle-two #logo-wrapper {
+  position: absolute;
+  right: 2vh;
+  bottom: 2vh;
+}
+
+.rectangles-wrapper #rectangle-two #logo-wrapper #logo-pc {
+  height: 2.5vw;
+}
+
+.rectangles-wrapper #rectangle-two .discover-text-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #rectangle-one {
+    z-index: 1000 !important;
+    overflow-y: hidden;
+  }
+  #rectangle-one #btn-back {
+    height: 2.5em !important;
+  }
+  #rectangle-one #search-text {
+    display: none;
+  }
+  #rectangle-one #logo-wrapper-phone {
+    display: block;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  #rectangle-one #logo-wrapper-phone #logo-phone {
+    margin-top: 1em;
+    height: 5vw;
+    max-height: 2em;
+  }
+  #rectangle-one #examples-wrapper {
+    left: 30px !important;
+    position: relative !important;
+    top: 0px !important;
+  }
+  #rectangle-one #examples-wrapper #examples-title {
+    font-size: clamp(10px, 3.2vw, 20px) !important;
+    color: var(--suggestion-title-phone) !important;
+  }
+  #rectangle-one #examples-wrapper #examples {
+    font-size: clamp(12px, 2.2vw, 20px) !important;
+    color: var(--suggestions-phone-color) !important;
+  }
+  #rectangle-one #sneaker-wrapper {
+    position: absolute !important;
+    right: -100vw !important;
+    top: 100px !important;
+    height: 60vw;
+    min-height: 24em;
+    max-height: 40em;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+  }
+  #rectangle-one #sneaker-wrapper #sneaker-search-pc {
+    display: none;
+  }
+  #rectangle-one #sneaker-wrapper #sneaker-search-phone {
+    display: block !important;
+  }
+  #rectangle-one #search-form-wrapper {
+    margin: 0px !important;
+    padding: 0px !important;
+    top: clamp(260px, 36vw, 550px) !important;
+    position: relative !important;
+  }
+  #rectangle-one #search-form-wrapper #search-bar {
+    width: 94vw !important;
+    height: 10vw !important;
+    max-height: 2.4em !important;
+    font-size: 3vw !important;
+  }
+  #rectangle-one #search-form-wrapper #search-btn {
+    position: fixed;
+    top: 67% !important;
+    width: 26vw !important;
+    max-width: 18em;
+    height: 10vw !important;
+    max-height: 4em;
+    font-size: clamp(20px, 6vw, 16px) !important;
+    border-radius: 100px !important;
+  }
+  #rectangle-two {
+    z-index: 999 !important;
+  }
+  #rectangle-two #logo-pc {
+    display: none;
+  }
+  .discover-text-wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .discover-text-wrapper #discover-text {
+    position: absolute;
+    bottom: 0px;
+    color: var(--discover-text-color);
+    font-weight: 1000;
+    font-size: 20vw;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=search-page.css.map */
