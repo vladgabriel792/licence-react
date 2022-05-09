@@ -1,0 +1,9 @@
+!! Am sters fisierul "node_modules". 
+   Sa dai tu un npm install cred la inceput ca sa iti ia tot ce este in package_json ( adica puppeteer si express )        !!!
+
+- Am incercat sa fac functia de cautare in app.js pe endpointuri direct (ca un controller pt "/search"). 
+- Nu sunt inca sigur daca trebuie metoda de get sau post pentru search.
+- As vrea cumva ca search ul dupa ce este dat submit, sa urmeze functia aceea de pe endpoint
+ca mai apoi sa imi afiseze ce adidasi gaseste pe linkul respectiv in pagina "/shopping"
+
+- toate resursele sunt in directorul "public"
